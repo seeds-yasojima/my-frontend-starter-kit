@@ -37,7 +37,7 @@ export default {
     // }
   },
   // ダークモード必要であれば
-  // darkMode: 'class',
+  darkMode: 'class',
   corePlugins: {
     aspectRatio: false,
   },
