@@ -1,5 +1,5 @@
-# my-page-tsukuru
-汎用的なマイページを作りたい
+# My Frontend Starter Kit
+フロント開発スターターキット
 
 ## 開発手順
 ```
