@@ -1,5 +1,3 @@
-import * as React from 'react';
-
 import { ExclamationCircleIcon } from '@heroicons/react/24/solid';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
