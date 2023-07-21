@@ -26,3 +26,20 @@ dist-ssr
 
 # enviroment
 .env
+
+# yarn
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# 以下を入れ替えるとzero-installが利用できます
+# 簡単に言えば、プロジェクトで利用しているパッケージをすべてgit管理にし、
+# 開発に参加する方が、 `yarn install` しなくてもすぐに開発が始められるようになります
+# また、パッケージのバージョンが完全に固定されます
+#
+# 参考: https://yarnpkg.com/features/zero-installs
+#!.yarn/cache
+.pnp.*
