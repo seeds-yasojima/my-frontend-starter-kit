@@ -52,20 +52,30 @@ module.exports = {
         pathGroupsExcludedImportTypes: ['builtin'],
         pathGroups: [
           {
-            pattern: 'react',
+            pattern: '{react,react-router-dom}',
             group: 'builtin',
             position: 'before',
           },
-          // {
-          //   pattern: '{@/components/**,@/pages/**}',
-          //   group: 'internal',
-          //   position: 'before',
-          // },
-          // {
-          //   pattern: '@/styles/**',
-          //   group: 'index',
-          //   position: 'after',
-          // },
+          {
+            pattern: '{@/routes/**,@/pages/**,@/assets/**}',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '{@/components/**,@/features/**}',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '{@/libs/**,@/utils/**,@/hooks/**}',
+            group: 'internal',
+            position: 'before',
+          },
+          {
+            pattern: '@/types/**',
+            group: 'internal',
+            position: 'before',
+          },
         ],
       },
     ],
