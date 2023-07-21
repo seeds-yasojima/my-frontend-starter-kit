@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 
 import {
   PaintBrushIcon,
@@ -7,7 +8,6 @@ import {
   CommandLineIcon,
   LinkIcon,
 } from '@heroicons/react/24/solid';
-import { Link } from 'react-router-dom';
 import { twMerge } from 'tailwind-merge';
 
 type SectionTitleProps = {

@@ -1,8 +1,9 @@
+import { Link } from 'react-router-dom';
+
 import {
   UserCircleIcon,
   ArrowLeftOnRectangleIcon,
 } from '@heroicons/react/24/solid';
-import { Link } from 'react-router-dom';
 
 export const AccountToolBox = () => {
   const items = [

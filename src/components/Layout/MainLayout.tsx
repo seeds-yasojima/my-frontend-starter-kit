@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { twMerge } from 'tailwind-merge';
-
 import { Breadcrumb } from '@/components/Breadcrumb';
 import { SideNav, SpToolBar, AccountToolBox } from '@/components/Layout';
+
+import { twMerge } from 'tailwind-merge';
 
 type MainLayoutProps = {
   children: React.ReactNode;

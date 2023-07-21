@@ -1,14 +1,14 @@
 import { Suspense } from 'react';
-
 import { Outlet } from 'react-router-dom';
 
-import { MainLayout } from '@/components/Layout';
-import { Loading } from '@/components/Loading';
 import { Home } from '@/pages/mypage/Home';
 import { News } from '@/pages/mypage/News';
 import { NotPageTemplate } from '@/pages/mypage/NotPageTemplate';
 import { User } from '@/pages/mypage/User';
 import { NotFound } from '@/pages/NotFound';
+
+import { MainLayout } from '@/components/Layout';
+import { Loading } from '@/components/Loading';
 
 const AppElement = () => {
   return (

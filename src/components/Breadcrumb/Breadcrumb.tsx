@@ -1,9 +1,10 @@
-import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
-import { twMerge } from 'tailwind-merge';
-import useBreadcrumbs from 'use-react-router-breadcrumbs';
 
 import { protectedRoutes } from '@/routes/protected'; // 会員のみ閲覧可のルート
+
+import { ChevronRightIcon } from '@heroicons/react/24/solid';
+import { twMerge } from 'tailwind-merge';
+import useBreadcrumbs from 'use-react-router-breadcrumbs';
 
 export const Breadcrumb = () => {
   // excludePathsオプションにより、デフォルトで追加されるroot'/'を除いています。

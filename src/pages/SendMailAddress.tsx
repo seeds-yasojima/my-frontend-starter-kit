@@ -1,10 +1,12 @@
-import { ExclamationCircleIcon } from '@heroicons/react/24/solid';
-import { useForm, SubmitHandler } from 'react-hook-form';
 import { useNavigate } from 'react-router-dom';
-import { twMerge } from 'tailwind-merge';
 
 import logo from '@/assets/vite.svg';
+
 import { AuthLayout } from '@/components/Layout';
+
+import { ExclamationCircleIcon } from '@heroicons/react/24/solid';
+import { useForm, SubmitHandler } from 'react-hook-form';
+import { twMerge } from 'tailwind-merge';
 
 type Inputs = {
   email: string;

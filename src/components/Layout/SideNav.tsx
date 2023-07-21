@@ -1,8 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
-import { twMerge } from 'tailwind-merge';
 
 import logo from '@/assets/vite.svg';
 import { protectedRoutes } from '@/routes/protected';
+
+import { twMerge } from 'tailwind-merge';
 
 type SideNavProps = {
   isOpen: boolean;
