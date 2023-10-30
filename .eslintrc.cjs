@@ -92,5 +92,6 @@ module.exports = {
     'react/no-unescaped-entities': 'off',
     'tailwindcss/no-custom-classname': 'off',
     '@typescript-eslint/no-misused-promises': 'off', // react-hook-formのhandleSubmitでエラー出たため無効化。これでいいかは要検討
+    '@typescript-eslint/no-unsafe-return': 'off',
   },
 };

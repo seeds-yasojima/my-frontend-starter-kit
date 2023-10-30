@@ -11,12 +11,12 @@ type MainLayoutProps = {
 
 export const MainLayout = ({ children }: MainLayoutProps) => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const handleOpen = React.useCallback(() => {
+  const handleSidenav = React.useCallback(() => {
     setIsOpen(!isOpen);
   }, [isOpen]);
 
   return (
-    <div className="h-screen bg-gray-50 dark:bg-slate-900">
+    <div className="min-h-screen bg-gray-50 dark:bg-slate-900">
       <SpToolBar />
 
       <SideNav isOpen={isOpen} />
@@ -32,7 +32,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
             <button
               type="button"
               className="mr-3 rounded-md border p-1 text-gray-500 hover:bg-gray-200 hover:text-gray-600"
-              onClick={handleOpen}
+              onClick={handleSidenav}
             >
               <span className="sr-only">Toggle Navigation</span>
               <svg
