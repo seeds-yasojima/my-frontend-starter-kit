@@ -8,19 +8,13 @@ export const axios = Axios.create({
   },
 });
 
-type resProp = {
-  data: [];
-  statusCode: string;
-  message: string;
-};
-
 axios.interceptors.response.use(
   (response: AxiosResponse) => {
     // if (response.data.statusCode) {
     //   return Promise.reject(response.data.message);
     // }
 
-    return response.data;
+    return response;
   },
   (error: AxiosError) => {
     // FIXME: エラー時、共通処理記述など

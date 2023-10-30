@@ -12,8 +12,9 @@ import useSWRImmutable from 'swr/immutable'; // 一回取得して変わらな�
 import useSWRMutation from 'swr/mutation';
 
 // 都道府県の取得
-export const getPref = (url: string): Promise<PrefResType> => {
-  return axios.get(url);
+export const getPref = async (url: string): Promise<PrefResType> => {
+  const response = await axios.get(url);
+  return response.data;
 };
 
 export const usePref = (): PrefType => {
@@ -30,8 +31,9 @@ export const usePref = (): PrefType => {
 };
 
 // 市区町村の取得
-export const getCites = (url: string): Promise<CitesResType> => {
-  return axios.get(url);
+export const getCites = async (url: string): Promise<CitesResType> => {
+  const response = await axios.get(url);
+  return response.data;
 };
 
 export const useCites = (code: string): CitesType => {
@@ -60,9 +62,10 @@ export const usePopulation = () => {
 };
 
 // 人口の取得
-export const getPopulation = (
+export const getPopulation = async (
   url: string,
   { arg }: { arg: { prefCode: string; cityCode: string } },
 ): Promise<PopulationResType> => {
-  return axios.get(url, { params: arg });
+  const response = await axios.get(url, { params: arg });
+  return response.data;
 };
